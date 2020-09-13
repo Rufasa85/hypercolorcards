@@ -1,0 +1,30 @@
+body {
+    min-height:100vh;
+    background: linear-gradient(120deg, salmon 0%, salmon 50%,chartreuse 50%, chartreuse 100%);
+}
+
+
+.cards {
+    background:cornflowerblue;
+    min-height:50vh;
+}
+
+.newForm {
+    background:olive;
+    min-height:50vh;
+}
+
+.cardBox {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.card {
+    width:15%;
+    background:white;
+    border:1px solid black;
+    border-radius:5%;
+    box-shadow:2px 2px 4px black;
+
+
+}
