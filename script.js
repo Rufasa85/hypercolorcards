@@ -1,3 +1,4 @@
+//PASSWORD HW QUESTIONS
 // console.log("stuff");
 
 // var charArr = ["a","b","C","D",1,2,3,4,"!","#","^","&"];
@@ -13,6 +14,8 @@
 // }
 
 // document.querySelector("#password").textContent = finalPassword
+
+//MAIN DEMO
 //grabbing "page" divs, to hide and show
 var friendForm = document.querySelector(".newForm")
 var allPeopleDiv = document.querySelector(".cards")
@@ -113,4 +116,18 @@ newFriendForm.addEventListener("submit",function(event){
     document.querySelector("#newFriendHobbyThree").value = "";
     friendForm.style.display = "none";
     allPeopleDiv.style.display = "block";
+})
+
+
+//OTHER EVENTS DEMO
+document.querySelector("#colorInput").addEventListener("change",function(){
+    console.log(document.querySelector("#colorInput").value)
+    document.body.style.backgroundColor = document.querySelector("#colorInput").value
+})
+
+document.addEventListener("keyup",function(event){
+    console.log(event.key);
+    if(event.key==="h") {
+        alert("honk honk!")
+    }
 })
